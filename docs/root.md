@@ -64,7 +64,7 @@ An object that describes the storage information of the tiles.
 
 | Element | Description |
 | --- | --- |
-| storageformat | *esriMapCacheStorageModeCompactV2* This value is fixed and represents the storage format supported by tile package version 1. Its specification is available here. 
+| storageformat | *esriMapCacheStorageModeCompactV2* This value is fixed and represents the storage format supported by tile package (tpkx). Its specification is available [here](https://github.com/Esri/raster-tiles-compactcache). Tile packages with ".tpk" extension, use compact v1 storage format for cache tiles. The spec for this package type is not available 
 | packetsize | *128* The number of tiles stored in a bundle. 128 indicates each bundle covers 128 by 128 tiles.
 
 ## layer 

@@ -1,5 +1,6 @@
 # Tile Package Specification
-A tile package is a compressed file with ".tpkx" extension containing image tiles stored in Compact Cache V2 storage format. This storage format provides better performance to retrieve tiles when accessed over network file shares and cloud storage.
+
+A tile package is a compressed file with ".tpkx" extension with a simplified structure containing image tiles stored in Compact Cache V2 storage format and tiling scheme and other metadata is stored in a JSON file. This storage format provides better performance to retrieve tiles when accessed over network file shares and cloud storage.
  
 These tile package files are supported in ArcGIS Online, ArcGIS Desktop and ArcGIS Enterprise 10.7 or later, ArcGIS Pro 2.3 or later and applications built with ArcGIS Runtime SDK 100.5 or later for Android, Java, iOS, .NET, and Qt
 

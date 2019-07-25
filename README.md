@@ -17,7 +17,7 @@ The ItemInfo.json contains metadata to describe various properties needed to ide
 ### [root.json](docs/root.md)
 It describes various properties needed to visualize the cache content and includes tiling scheme, tile image format, tile size, and layer information objects.
 
-### thumbnail
+### [thumbnail](https://github.com/ArcGIS/tile-package-spec/blob/master/TPKX.png)
 A thumbnail 24-bit png, typically 200 pixels and 133 pixels.
 
 ### tile

@@ -7,7 +7,7 @@ These tile package files are supported in ArcGIS Online, ArcGIS Desktop and ArcG
 _Note:_ Tile packages with ".tpk" extension, use compact storage V1 format for cache tiles. The spec for this package type is not available and use of tpkx is recommended.
 
 ## Folder structure
-The folder structure with in the compressed Tile Package (.tpkx) is  illustrated below  in Figure 1. It consists of [iteminfo.json](docs/iteminfo.md), [root.json](docs/root.md), a [thumbnail](TPKX.png) image and a folder named "tile" containing .bundle files, where tiles are stored in [Compact V2 storage format](https://github.com/Esri/raster-tiles-compactcache) for each level of detail. 
+The folder structure with in the compressed Tile Package (.tpkx) is  illustrated below  in Figure 1. It consists of [iteminfo.json](docs/iteminfo.md), [root.json](docs/root.md), a thumbnail image and a folder named "tile" containing .bundle files, where tiles are stored in [Compact V2 storage format](https://github.com/Esri/raster-tiles-compactcache) for each level of detail. 
   
    ![Figure 1. Tpkx folder structure](TPKX.png)
 
@@ -17,8 +17,8 @@ The ItemInfo.json contains metadata to describe various properties needed to ide
 ### [root.json](docs/root.md)
 It describes various properties needed to visualize the cache content and includes tiling scheme, tile image format, tile size, and layer information objects.
 
-### [thumbnail](TPKX.png)
-A thumbnail 24-bit png, typically 200 pixels and 133 pixels.
+### thumbnail
+A thumbnail 24-bit png, typically 200 pixels and 133 pixels. Please see our [blog](https://www.esri.com/arcgis-blog/products/arcgis-online/uncategorized/put-your-best-thumbnail-forward) for more details.
 
 ### tile
 The "tile" folder contains the cache tiles in ".bundle" format grouped inside folders representing each level of details of the cache tiling schema. The ".bundle" format uses [Compact Cache V2 storage format](https://github.com/Esri/raster-tiles-compactcache) for storing tiles. 

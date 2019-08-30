@@ -15,7 +15,6 @@ It describes various properties needed to visualize the cache content and includ
 | resampling | *true/false* Boolean value indicating whether the tiles should be resampled when the tiles at a given level of detail are missing. When true, clients can resample the tiles avaialble at nearest level of detail|
 | initialExtent | Default initial extent for displaying the tiles |
 | fullExtent | Full extent of the tiles |
-| cacheType (optional) | This is an optional property required only if the tile format is LERC. *Elevation* is the only supported value for this |
 | tileInfo | Object that describes the tiling scheme |
 | storageInfo | Object that describes the storage format and and other bundle related properties |
 | tileImageInfo |Object that describes properties of the image format |
@@ -55,9 +54,8 @@ An object describing properties of the image format for the tiles.
 
 | Element | Description |
 | --- | --- |
-| format | *PNG/PNG8/PNG24/PNG32/JPEG/MIXED/LERC* This setting determines the image format used for the tiles. The image format is important while creating the cache tiles because it determines the size on disk of the tiles, the image quality, and the ability to make the tile background transparent |
+| format | *PNG/PNG8/PNG24/PNG32/JPEG/MIXED* This setting determines the image format used for the tiles. The image format is important while creating the cache tiles because it determines the size on disk of the tiles, the image quality, and the ability to make the tile background transparent |
 | compression | *0* for PNG/LERC, *0-100* for JPEG. Compression refers to the amount of JPEG compression that was used when tiles were created using JPEG or mixed image format. Higher values signify higher JPEG quality and therefore less compression. For imagery, values of 55 to 75 are usually sufficient without causing any visible loss of quality. For vectors and other sharply defined features or regions, a higher quality of 90 is recommended as a starting point |
-| lercError | *0.1* This property is used when format is set to LERC.  LERC compression value. The maximum tolerated error value that is applicable per pixel (not an average for the image). This value is specified in the units of the mosaic dataset. For example, if the error is 10 centimeters and the mosaic dataset is in meters, enter 0.1 |
 
 ## storageInfo
 An object that describes the storage information of the tiles. 
